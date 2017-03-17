@@ -1,0 +1,42 @@
+doctype html
+html
+	head
+		title #Syria
+		link(href="https://fonts.googleapis.com/css?family=Lora|Oswald|Quicksand", rel="stylesheet")
+		script(src='https://code.jquery.com/jquery-2.2.4.min.js')
+		style
+			include ../css/style.css
+			include ../css/jquery-jvectormap-2.0.3.css
+	body
+		div.header
+			h1 #SYRIA
+			h2 What people are saying about #Syria
+			
+		div.content
+			div.one
+				p.comment #{tweets}
+				p.metadata Bob Smith | March 17, 2017
+			div.two
+				p.comment #{response}
+				p.metadata Paulette Smith | March 17, 2017
+			div.three
+				p.comment Five It's less than 140. This is a tweet about Syria. It's less than 140 characters. This is a tweet about Syria. It's less than 140 #Syria.
+				p.metadata Paulette Smith | March 17, 2017
+			div.four
+				p.comment Five It's less than 140. This is a tweet about Syria. It's less than 140 characters. This is a tweet about Syria. It's less than 140 #Syria.
+				p.metadata Paulette Smith | March 17, 2017
+			div.five
+				p.comment Five It's less than 140. This is a tweet about Syria. It's less than 140 characters. This is a tweet about Syria. It's less than 140 #Syria.
+				p.metadata Paulette Smith | March 17, 2017
+		div.map
+			div#world-map-markers
+			
+			
+			
+			
+			
+		script
+			include ../js/jquery-jvectormap-2.0.3.min.js
+			include ../js/jquery-jvectormap-world-mill.js
+			include ../js/map.js
+			include ../js/tweets.js
