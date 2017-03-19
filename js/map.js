@@ -1,3 +1,4 @@
+// filler code for now from http://jvectormap.com/examples/markers-world/
 $(function(){
   $('#world-map-markers').vectorMap({
     map: 'world_mill',

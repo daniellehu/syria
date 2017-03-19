@@ -14,20 +14,20 @@ html
 			
 		div.content
 			div.one
-				p.comment #{tweets}
-				p.metadata Bob Smith | March 17, 2017
+				p.comment #{tweets.statuses[0].text}
+				p.metadata #{tweets.statuses[0].user.name} | #{tweets.statuses[0].created_at}
 			div.two
-				p.comment #{response}
-				p.metadata Paulette Smith | March 17, 2017
+				p.comment #{tweets.statuses[1].text}
+				p.metadata #{tweets.statuses[1].user.name} | #{tweets.statuses[1].created_at}
 			div.three
-				p.comment Five It's less than 140. This is a tweet about Syria. It's less than 140 characters. This is a tweet about Syria. It's less than 140 #Syria.
-				p.metadata Paulette Smith | March 17, 2017
+				p.comment #{tweets.statuses[2].text}
+				p.metadata #{tweets.statuses[2].user.name} | #{tweets.statuses[2].created_at}
 			div.four
-				p.comment Five It's less than 140. This is a tweet about Syria. It's less than 140 characters. This is a tweet about Syria. It's less than 140 #Syria.
-				p.metadata Paulette Smith | March 17, 2017
+				p.comment #{tweets.statuses[3].text}
+				p.metadata #{tweets.statuses[3].user.name} | #{tweets.statuses[3].created_at}
 			div.five
-				p.comment Five It's less than 140. This is a tweet about Syria. It's less than 140 characters. This is a tweet about Syria. It's less than 140 #Syria.
-				p.metadata Paulette Smith | March 17, 2017
+				p.comment #{tweets.statuses[4].text}
+				p.metadata #{tweets.statuses[4].user.name} | #{tweets.statuses[4].created_at}
 		div.map
 			div#world-map-markers
 			
